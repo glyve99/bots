@@ -38,7 +38,7 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 	}
 
 	if strings.HasPrefix(m.Content, "!ajuda") {
-		s.ChannelMessageSend(m.ChannelID, "Dá pra lançar esses:\n!passeio @usuário\n!cavalo\n!medusa\n!gabi\n!stronda\n!milton\n!rafa\n!jabes\n!lixo\n!alek\n!rs\n!sofro\n!jojofag\n!tarde\n!tchurosbango\n!yamete\n!zoio")
+		s.ChannelMessageSend(m.ChannelID, "Dá pra lançar esses:\n!passeio @usuário\n!cavalo\n!medusa\n!gabi\n!stronda\n!milton\n!rafa\n!jabes\n!lixo\n!alek\n!rs\n!sofro\n!jojofag\n!tarde\n!tchurosbango\n!yamete\n!zoio\n!lohane")
 	}
 
 	if strings.HasPrefix(m.Content, "!passeio") {
@@ -81,7 +81,7 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 	if strings.HasPrefix(m.Content, "!medusa") {
 		s.ChannelMessageSend(m.ChannelID, "parabéns medusa pela resposta da 3")
 	}
-	
+
 	if strings.HasPrefix(m.Content, "!adm") {
 		s.ChannelMessageSend(m.ChannelID, "Você é corno?")
 	}
