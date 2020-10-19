@@ -37,6 +37,28 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 		return
 	}
 
+	if strings.HasPrefix(m.Content, "!ajuda") {
+		s.ChannelMessageSend(m.ChannelID,	"Dá pra lançar esses:\n"
+											"!passeio @usuário\n"
+											"!cavalo\n"
+											"!medusa\n"
+											"!gabi\n"
+											"!stronda\n"
+											"!milton\n"
+											"!rafa\n"
+											"!jabes\n"
+											"!lixo\n"
+											"!alek\n"
+											"!rs\n"
+											"!sofro\n"
+											"!jojofag\n"
+											"!tarde\n"
+											"!tchurosbango\n"
+											"!yamete\n"
+											"!zoio"
+							)
+	}
+
 	if strings.HasPrefix(m.Content, "!passeio") {
 
 		id := strings.Split(m.Content, " ")[1]
