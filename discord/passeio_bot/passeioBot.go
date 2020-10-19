@@ -81,6 +81,10 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 	if strings.HasPrefix(m.Content, "!medusa") {
 		s.ChannelMessageSend(m.ChannelID, "parabéns medusa pela resposta da 3")
 	}
+	
+	if strings.HasPrefix(m.Content, "!adm") {
+		s.ChannelMessageSend(m.ChannelID, "Você é corno?")
+	}
 
 	for slug := range bufferMap {
 		command := "!" + slug
