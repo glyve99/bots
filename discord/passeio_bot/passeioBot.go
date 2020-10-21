@@ -38,19 +38,20 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 	}
 
 	if strings.HasPrefix(m.Content, "!ajuda") {
-		s.ChannelMessageSend(m.ChannelID, "Dá pra lançar esses:
+		s.ChannelMessageSend(m.ChannelID, `Dá pra lançar esses:
 		\n!passeio @usuário
 
 		\n\nCOMANDOS DE AUDIO:
 		\n!cavalo	!stronda	!rafa		!sofro
 		\n!milton	!alek		!zoio		!tchurosbango
-		\n!yamete	!rs			!tarde		!fish
+		\n!yamete	!rs		!tarde		!fish
 		\n!jojofag	!lohane		!miranha	!tripaloski
-		\n!potencia	!parmalate	!oba
+		\n!potencia	!parmalate	!oba		!gado
+		\n!implacavel
 
 		\n\nCOMANDOS DE TEXTO:
 		\n!medusa	!gabi		!jabes		!lixo
-		\n!adm		!miranha	!amongao")
+		\n!adm		!miranha	!amongao`)
 	}
 
 	if strings.HasPrefix(m.Content, "!passeio") {
