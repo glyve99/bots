@@ -39,19 +39,21 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 
 	if strings.HasPrefix(m.Content, "!ajuda") {
 		s.ChannelMessageSend(m.ChannelID, `Dá pra lançar esses:
-		\n!passeio @usuário
+!passeio @usuário
 
-		\n\nCOMANDOS DE AUDIO:
-		\n!cavalo	!stronda	!rafa		!sofro
-		\n!milton	!alek		!zoio		!tchurosbango
-		\n!yamete	!rs		!tarde		!fish
-		\n!jojofag	!lohane		!miranha	!tripaloski
-		\n!potencia	!parmalate	!oba		!gado
-		\n!implacavel
 
-		\n\nCOMANDOS DE TEXTO:
-		\n!medusa	!gabi		!jabes		!lixo
-		\n!adm		!miranha	!amongao`)
+COMANDOS DE AUDIO:
+!cavalo	!stronda	!rafa		!sofro
+!milton	!alek		!zoio		!tchurosbango
+!yamete	!rs		!tarde		!fish
+!jojofag	!lohane		!miranha	!tripaloski
+!potencia	!parmalate	!oba		!gado
+!implacavel
+
+
+COMANDOS DE TEXTO:
+!medusa	!gabi		!jabes		!lixo
+!adm		!miranha	!amongao`)
 	}
 
 	if strings.HasPrefix(m.Content, "!passeio") {
@@ -98,7 +100,7 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 	if strings.HasPrefix(m.Content, "!adm") {
 		s.ChannelMessageSend(m.ChannelID, "Você é corno?")
 	}
-	
+
 	if strings.HasPrefix(m.Content, "!amongao") {
 		s.ChannelMessageSend(m.ChannelID, "@everyone rinha de Amongus")
 	}
