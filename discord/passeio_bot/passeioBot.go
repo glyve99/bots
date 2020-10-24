@@ -102,7 +102,7 @@ COMANDOS DE TEXTO:
 	}
 
 	if strings.HasPrefix(m.Content, "!amongao") {
-		s.ChannelMessageSend(m.ChannelID, "@everyone rinha de Amongus")
+		s.ChannelMessageSend(m.ChannelID, "@everyone rinha de astronauta")
 	}
 
 	for slug := range bufferMap {
