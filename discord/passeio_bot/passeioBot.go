@@ -48,7 +48,7 @@ COMANDOS DE AUDIO:
 !yamete	!rs		!tarde		!fish
 !jojofag	!lohane		!miranha	!tripaloski
 !potencia	!parmalate	!oba		!gado
-!implacavel	!gabriel
+!implacavel	!gabriel    !poze
 
 
 COMANDOS DE TEXTO:
