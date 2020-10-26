@@ -49,7 +49,7 @@ COMANDOS DE AUDIO:
 !jojofag	!lohane		!miranha	!tripaloski
 !potencia	!parmalate	!oba		!gado
 !implacavel	!gabriel    !poze	!molina
-!djazeitona
+!djazeitona !chuva  !tilt     !almir
 
 
 COMANDOS DE TEXTO:
