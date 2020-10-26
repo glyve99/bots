@@ -48,8 +48,8 @@ COMANDOS DE AUDIO:
 !yamete	!rs		!tarde		!fish
 !jojofag	!lohane		!miranha	!tripaloski
 !potencia	!parmalate	!oba		!gado
-!implacavel	!gabriel    !poze	!molina	!chuva	!tilt
-!almir
+!implacavel	!gabriel    !poze	!molina
+!djazeitona !chuva  !tilt     !almir
 
 
 COMANDOS DE TEXTO:
