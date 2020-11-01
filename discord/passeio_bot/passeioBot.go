@@ -10,6 +10,7 @@ import (
 	"os/signal"
 	"path/filepath"
 	"strings"
+	"sync"
 	"syscall"
 	"time"
 
@@ -29,6 +30,7 @@ func init() {
 
 var token string
 var bufferMap = make(map[string][][]byte)
+var audioMutex = &sync.Mutex{}
 
 func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 
@@ -191,6 +193,8 @@ func loadSound(filepath string) error {
 }
 
 func playSound(s *discordgo.Session, guild *discordgo.Guild, authorID, slug string) (err error) {
+	audioMutex.Lock()
+	defer audioMutex.Unlock()
 
 	for _, vs := range guild.VoiceStates {
 		if vs.UserID == authorID {
