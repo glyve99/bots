@@ -50,7 +50,7 @@ COMANDOS DE AUDIO:
 !potencia	!parmalate	!oba		!gado
 !implacavel	!gabriel    !poze	!molina
 !djazeitona !azeitonabl !chuva  !tilt
-!almir
+!almir      !douglas    !skate
 
 
 COMANDOS DE TEXTO:
