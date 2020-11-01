@@ -30,7 +30,7 @@ func init() {
 
 var token string
 var bufferMap = make(map[string][][]byte)
-var audioMutex sync.Mutex
+var audioMutex = &sync.Mutex{}
 
 func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 
