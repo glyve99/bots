@@ -55,7 +55,7 @@ COMANDOS DE AUDIO:
 
 COMANDOS DE TEXTO:
 !medusa	!gabi		!jabes		!lixo
-!adm		!miranha	!amongao`)
+!adm		!miranha	!amongao !boraamong`)
 	}
 
 	if strings.HasPrefix(m.Content, "!passeio") {
@@ -105,6 +105,23 @@ COMANDOS DE TEXTO:
 
 	if strings.HasPrefix(m.Content, "!amongao") {
 		s.ChannelMessageSend(m.ChannelID, "@everyone rinha de astronauta")
+	}
+	if strings.HasPrefix(m.Content, "!boraamong") {
+		s.ChannelMessageSend(m.ChannelID, `⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠿⠿⠛⠛⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿ 
+										   ⣿⣿⣿⣿⣿⣿⣿⡿⠋⢀⣠⣤⣶⣶⣶⣤⡀⠈⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿ 
+										   ⣿⣿⣿⣿⣿⣿⡟⠄⢰⣿⣿⡿⠛⠉⠉⣉⣉⠄⠄⠘⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿ 
+										   ⣿⣿⣿⣿⣿⣿⠇⠄⢸⣿⣿⠁⠘⣿⣿⣿⣿⣿⣿⣦⡀⢹⣿⣿⣿⣿⣿⣿⣿⣿ 
+										   ⣿⣿⠿⠟⠛⠛⠄⠄⣼⣿⣿⡀⠄⠈⠛⠛⠛⠛⠛⠋⠁⢸⣿⣿⣿⣿⣿⣿⣿⣿ 
+										   ⣿⡇⢀⣶⣿⠂⠄⢸⣿⣿⣿⣧⣤⣄⣀⣀⣀⣀⣤⠄⢰⣿⣿⣿⣿⣿⣿⣿⣿⣿ 
+										   ⣿⡇⠄⣿⣿⠄⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣄⣈⠙⠛⠿⣿⣿⣿⣿⣿ 
+										   ⣿⡇⠄⣿⣿⠄⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣤⣈⠻⣿⣿⣿ 
+										   ⣿⡇⠄⠈⠉⠄⣠⣿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⠈⢻⣿ 
+										   ⣿⣿⠆⠄⠄⠄⢸⣿⡆⠙⢿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠛⣿⣿⣿⡿⠟⠋⢀⣾⣿ 
+										   ⣿⣿⠄⠄⠄⠄⣼⣿⣿⣆⡀⠈⠉⠉⠉⠉⠉⠄⢀⣀⣀⠄⠁⠄⢀⣠⣾⣿⣿⣿ 
+										   ⣿⣿⡆⠄⠄⠄⢿⣿⣿⣿⣿⣶⣤⣤⣤⣤⣶⣶⣾⣿⣿⠁⠄⣿⣿⣿⣿⣿⣿⣿ 
+										   ⣿⣿⣿⡆⠄⠄⠈⠻⣿⣿⣿⣿⠟⠉⠉⠉⠁⣼⣿⣿⠏⠄⢠⣿⣿⣿⣿⣿⣿⣿ 
+										   ⣿⣿⣿⣿⡄⠄⠄⠄⠈⠛⠛⠁⢠⣄⠄⠄⠄⠄⠄⠄⠄⣰⣿⣿⣿⣿⣿⣿⣿⣿ 
+										   ⣿⣿⣿⣿⣷⡄⠄⠄⠄⠄⠄⠄⠛⠛⠂⠄⠄⠄⠄⠄⠴⢿⣿⣿⣿⣿⣿⣿⣿⣿`)
 	}
 
 	for slug := range bufferMap {
