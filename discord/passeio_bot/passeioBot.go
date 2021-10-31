@@ -93,6 +93,10 @@ COMANDOS DE TEXTO:
 		s.ChannelMessageSend(m.ChannelID, "SOFRO")
 	}
 
+	if strings.HasPrefix(m.Content, "!hacktober") {
+		s.ChannelMessageSend(m.ChannelID, "Aceita meu PR pufavo c:")
+	}
+
 	if strings.HasPrefix(m.Content, "!lixo") {
 		s.ChannelMessageSend(m.ChannelID, "PHP É LIXO")
 	}
